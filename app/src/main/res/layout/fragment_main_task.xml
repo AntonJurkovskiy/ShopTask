@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.coordinatorlayout.widget.CoordinatorLayout
+
+<androidx.constraintlayout.widget.ConstraintLayout
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     xmlns:android="http://schemas.android.com/apk/res/android"
@@ -7,27 +8,26 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     tools:context=".MainTaskFragment">
 
-    <com.google.android.material.bottomappbar.BottomAppBar
-        android:id = "@+id/bottomAppBar"
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/task_recyclerview"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        app:fabCradleMargin="10dp"
-        app:fabCradleRoundedCornerRadius="15dp"
-        android:layout_gravity="bottom">
-        <com.google.android.material.bottomnavigation.BottomNavigationView
-            android:id = "@+id/bottomNavigationView"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginEnd = "16dp"
-            app:elevation="5dp"
-            android:background="@android:color/transparent"
-            app:menu="@menu/bottom_menu"/>
-    </com.google.android.material.bottomappbar.BottomAppBar>
+        android:layout_height="match_parent"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="249dp"
+        tools:listitem="@layout/list_item">
+
+    </androidx.recyclerview.widget.RecyclerView>
 
     <com.google.android.material.floatingactionbutton.FloatingActionButton
         android:id = "@+id/fab"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:src = "@drawable/ic_add_task"
-        app:layout_anchor="@id/bottomAppBar"/>
-</androidx.coordinatorlayout.widget.CoordinatorLayout>
+        android:layout_margin="40dp"
+        app:layout_constraintEnd_toEndOf="@id/task_recyclerview"
+        app:layout_constraintBottom_toBottomOf="@id/task_recyclerview"
+        />
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+

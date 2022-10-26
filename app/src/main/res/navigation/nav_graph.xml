@@ -8,19 +8,19 @@
     <fragment
         android:id="@+id/mainTaskFragment"
         android:name="com.azimut4946777.shoptask.MainTaskFragment"
-        android:label="fragment_main_task"
+        android:label="@string/main_task_fragment_blank"
         tools:layout="@layout/fragment_main_task" >
         <action
-            android:id="@+id/action_mainTaskFragment_to_detailTaskFragment"
-            app:destination="@id/detailTaskFragment" />
+            android:id="@+id/action_mainTaskFragment_to_addTaskFragment"
+            app:destination="@id/addTaskFragment" />
     </fragment>
     <fragment
-        android:id="@+id/detailTaskFragment"
-        android:name="com.azimut4946777.shoptask.DetailTaskFragment"
-        android:label="fragment_detail_task"
-        tools:layout="@layout/fragment_detail_task" >
+        android:id="@+id/addTaskFragment"
+        android:name="com.azimut4946777.shoptask.AddTaskFragment"
+        android:label="@string/detail_task_fragment_blank"
+        tools:layout="@layout/fragment_add_task" >
         <action
-            android:id="@+id/action_detailTaskFragment_to_mainTaskFragment"
+            android:id="@+id/action_addTaskFragment_to_mainTaskFragment"
             app:destination="@id/mainTaskFragment" />
     </fragment>
 </navigation>

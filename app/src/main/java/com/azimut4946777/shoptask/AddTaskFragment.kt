@@ -5,11 +5,12 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import com.azimut4946777.shoptask.databinding.FragmentDetailTaskBinding
+import com.azimut4946777.shoptask.databinding.FragmentAddTaskBinding
 
 
-class DetailTaskFragment : Fragment() {
- private var _binding: FragmentDetailTaskBinding? = null
+
+class AddTaskFragment : Fragment() {
+ private var _binding: FragmentAddTaskBinding? = null
     private val binding get() = _binding!!
 
 
@@ -18,7 +19,7 @@ class DetailTaskFragment : Fragment() {
         savedInstanceState: Bundle?
     ): View? {
         // Inflate the layout for this fragment
-        _binding = FragmentDetailTaskBinding.inflate(layoutInflater,container,false)
+        _binding = FragmentAddTaskBinding.inflate(layoutInflater,container,false)
         //TODO()
 
 

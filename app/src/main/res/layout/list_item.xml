@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/default_margin"
+    app:cardCornerRadius="@dimen/corner_radius_list_item"
+    app:cardElevation="@dimen/default_elevation"
+    app:cardUseCompatPadding="true"
+    >
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:padding="@dimen/default_padding"
+    android:background="@color/my_yellow"
+    >
+    <CheckBox
+        android:id="@+id/task_is_done"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="@style/MyCheckbox" />
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tv_task_name"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        tools:text="Пиво холодное по Акции"
+        android:textSize="@dimen/default_text_size"
+        android:padding="@dimen/default_padding"
+        android:textStyle="bold"/>
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tv_task_qty"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:text="2"
+        android:padding="10dp"
+        android:textStyle="bold"
+        android:textSize="20sp"/>
+</LinearLayout>
+
+</androidx.cardview.widget.CardView>
