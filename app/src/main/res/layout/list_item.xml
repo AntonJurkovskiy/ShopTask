@@ -14,7 +14,7 @@
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:orientation="horizontal"
-    android:padding="@dimen/default_padding"
+    android:padding="10dp"
     android:scrollbars="vertical"
     >
     <CheckBox
@@ -22,16 +22,16 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         style="@style/MyCheckbox" />
-    <androidx.appcompat.widget.AppCompatTextView
+    <TextView
         android:id="@+id/tv_task_name"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_weight="1"
-        tools:text="Пиво холодное по Акции"
+        tools:text="Пиво "
         android:textSize="@dimen/default_text_size"
-        android:padding="@dimen/default_padding"
+        android:padding="10dp"
         android:textStyle="bold"/>
-    <androidx.appcompat.widget.AppCompatTextView
+    <TextView
         android:id="@+id/tv_task_qty"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
