@@ -31,6 +31,9 @@
         android:name="com.azimut4946777.shoptask.EditTaskFragment"
         android:label="fragment_edit_task"
         tools:layout="@layout/fragment_edit_task" >
+        <argument
+            android:name="task_id"
+            app:argType="integer" />
         <action
             android:id="@+id/action_editTaskFragment_to_mainTaskFragment"
             app:destination="@id/mainTaskFragment" />

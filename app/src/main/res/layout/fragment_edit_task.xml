@@ -57,15 +57,15 @@
                />
 
             <com.google.android.material.button.MaterialButton
-                android:id="@+id/edit_button"
+                android:id="@+id/delete_button"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                app:cornerRadius="5dp"
                 android:layout_marginEnd="30dp"
                 android:layout_marginRight="12dp"
                 android:layout_toStartOf="@id/save_button"
                 android:layout_toLeftOf="@id/save_button"
-                android:text="@string/delete_button_text" />
+                android:text="@string/delete_button_text"
+                app:cornerRadius="5dp" />
 
         </RelativeLayout>
     </LinearLayout>
