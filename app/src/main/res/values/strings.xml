@@ -6,4 +6,8 @@
     <string name="detail_task_fragment_blank">Добавить Покупку</string>
     <string name="hello">Hello</string>
     <string name="delete_all">delete all</string>
+    <string name="task_name_input_hint">Что купить?</string>
+    <string name="task_qty_input_hint">Колличество</string>
+    <string name="save_button_text">Сохранить</string>
+    <string name="delete_button_text">Удалить</string>
 </resources>

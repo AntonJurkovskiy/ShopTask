@@ -2,9 +2,14 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto">
     <item
+        android:id="@+id/grid"
+        android:icon = "@drawable/ic_grid_view"
+        android:title="@string/delete_all"
+        app:showAsAction="ifRoom"/>
+    <item
         android:id="@+id/delete_all"
         android:icon = "@drawable/ic_delete_all_2"
         android:title="@string/delete_all"
-        app:showAsAction="always"/>
+        app:showAsAction="ifRoom"/>
 
 </menu>

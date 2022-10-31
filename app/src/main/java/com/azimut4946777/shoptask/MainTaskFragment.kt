@@ -66,11 +66,15 @@ class MainTaskFragment : Fragment() {
     override fun onCreateOptionsMenu(menu: Menu, inflater: MenuInflater) {
         inflater.inflate(R.menu.top_menu, menu)
     }
-    //For AppBar. Delete All Button Action
+    //For AppBar. Button Action
     override fun onOptionsItemSelected(item: MenuItem): Boolean {
         return when (item.itemId) {
             R.id.delete_all -> {
-                TODO()
+
+                true
+            }
+            R.id.grid-> {
+
                 true
             }
             else-> super.onOptionsItemSelected(item)

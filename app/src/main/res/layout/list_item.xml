@@ -15,7 +15,7 @@
     android:layout_height="wrap_content"
     android:orientation="horizontal"
     android:padding="@dimen/default_padding"
-    android:background="@color/my_yellow"
+    android:scrollbars="vertical"
     >
     <CheckBox
         android:id="@+id/task_is_done"

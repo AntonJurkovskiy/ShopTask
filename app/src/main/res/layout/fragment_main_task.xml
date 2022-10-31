@@ -6,6 +6,7 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    style="@style/MyRecycler"
     tools:context=".MainTaskFragment">
 
     <androidx.recyclerview.widget.RecyclerView
@@ -25,6 +26,7 @@
         android:layout_height="wrap_content"
         android:src = "@drawable/ic_add_task"
         android:layout_margin="40dp"
+
         app:layout_constraintEnd_toEndOf="@id/task_recyclerview"
         app:layout_constraintBottom_toBottomOf="@id/task_recyclerview"
         />
