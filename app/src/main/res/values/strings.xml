@@ -1,13 +1,19 @@
 <resources>
-    <string name="app_name">ShopTask</string>
+    <string name="app_name">Що Купити?</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="main_task_fragment_blank">Список Покупок</string>
-    <string name="detail_task_fragment_blank">Добавить Покупку</string>
+    <string name="detail_task_fragment_blank">Додати Покупку</string>
     <string name="hello">Hello</string>
     <string name="delete_all">delete all</string>
-    <string name="task_name_input_hint">Что купить?</string>
-    <string name="task_qty_input_hint">Колличество</string>
-    <string name="save_button_text">Сохранить</string>
-    <string name="delete_button_text">Удалить</string>
+    <string name="task_name_input_hint">Що купити?</string>
+    <string name="task_qty_input_hint">Кількість</string>
+    <string name="save_button_text">Зберегти</string>
+    <string name="delete_button_text">Видалити</string>
+    <string name="layout_manager">layout manager</string>
+    <string name="alert_title">Увага!</string>
+    <string name="delete_question">Видалити всі записи?</string>
+    <string name="no">Ні</string>
+    <string name="yes">Так</string>
+    <string name="editFragmentLabel">Редагувати</string>
 </resources>

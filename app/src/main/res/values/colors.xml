@@ -9,7 +9,9 @@
     <color name="white">#FFFFFFFF</color>
     <color name="my_yellow">#D0E317</color>
     <color name="recycler_back_light">#58a5f0</color>
-    <color name="recycler_back_dark">#62727b</color>
-    <color name="card_back_light">#fff263</color>
-    <color name="card_back_dark">#ff3d00</color>
+    <color name="recycler_back_dark">#2E3233</color>
+    <color name="card_back_light">#E4E3D7</color>
+    <color name="card_back_dark">#474342</color>
+    <color name="fab_back_light">#F3EF04</color>
+    <color name="fab_back_dark">#C5ADA7</color>
 </resources>

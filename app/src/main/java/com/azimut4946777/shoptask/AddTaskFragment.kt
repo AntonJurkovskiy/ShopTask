@@ -51,7 +51,7 @@ addNewTask()
     private fun addNewTask(){
         if(isEntryValid()){
             viewModel.addNewTask(
-                binding.taskNameInput.text.toString(),
+                binding.taskNameInput.text.toString().capitalize().trim(),
                 binding.taskQtyInput.text.toString(),
             )
             val action = AddTaskFragmentDirections.actionAddTaskFragmentToMainTaskFragment()

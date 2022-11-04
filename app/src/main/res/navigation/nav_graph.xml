@@ -12,10 +12,12 @@
         tools:layout="@layout/fragment_main_task" >
         <action
             android:id="@+id/action_mainTaskFragment_to_addTaskFragment"
-            app:destination="@id/addTaskFragment" />
+            app:destination="@id/addTaskFragment"
+            app:enterAnim="@android:anim/slide_in_left" />
         <action
             android:id="@+id/action_mainTaskFragment_to_editTaskFragment"
-            app:destination="@id/editTaskFragment" />
+            app:destination="@id/editTaskFragment"
+            app:enterAnim="@android:anim/slide_in_left" />
     </fragment>
     <fragment
         android:id="@+id/addTaskFragment"
@@ -24,12 +26,14 @@
         tools:layout="@layout/fragment_add_task" >
         <action
             android:id="@+id/action_addTaskFragment_to_mainTaskFragment"
-            app:destination="@id/mainTaskFragment" />
+            app:destination="@id/mainTaskFragment"
+            app:popUpTo="@id/mainTaskFragment"
+            app:popUpToInclusive="true" />
     </fragment>
     <fragment
         android:id="@+id/editTaskFragment"
         android:name="com.azimut4946777.shoptask.EditTaskFragment"
-        android:label="fragment_edit_task"
+        android:label="@string/editFragmentLabel"
         tools:layout="@layout/fragment_edit_task" >
         <argument
             android:name="task_id"
